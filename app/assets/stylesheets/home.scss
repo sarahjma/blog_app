@@ -1,0 +1,20 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.home-landing {
+  max-width: 100%;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.home-content .btn-action {
+  border: 1px solid black;
+  padding: 1em;
+  font-size: 10em;
+}

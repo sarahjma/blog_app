@@ -1,0 +1,16 @@
+<section class="show">
+  <div class="entry">
+    <h1><%= @article.title %></h1>
+    <p><%= @article.text %></p>
+
+    <div class="options">
+      <%= link_to 'Edit', edit_article_path(@article) %>
+      <%= link_to 'Back', articles_path %>
+    </div>
+
+  </div>
+</section>
+
+
+
+

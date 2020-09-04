@@ -1,0 +1,24 @@
+<section class="index">
+  <h1>My Articles</h1>
+
+  <div>
+    <% @articles.each do |article| %>
+      <div class="entry">
+        <h2><%= article.title %></h2>
+        <p><%= article.text %></p>
+        <div class="options">
+          <%= link_to 'Show', article_path(article) %>
+          <%= link_to 'Edit', edit_article_path(article) %>
+          <%= link_to 'Destroy', article_path(article),
+                        method: :delete,
+                        data: { confirm: 'Are you sure you want to delete this entry?' } %>
+        </div>
+
+      </div>
+    <% end %>
+  </div>
+
+  <div class="new-link">
+    <%= link_to 'New article', new_article_path %>
+  </div>
+</section>
